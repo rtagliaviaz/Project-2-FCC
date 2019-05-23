@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>2nd FCC Project</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container text-center">
+    <h1 id="title" class="display-3 ">Survey Form</h1>
+    <p id="description" style="font-style: italic; font-size: 20px;">this Survey Form is the 2nd responsive web design project of FCC</p>
+  </div>
+
+  <div class="container my-5">
+    <div class="col-md-4 offset-md-4">
+      <form id="survey-form">
+        <div class="form-group ">
+
+          <label id="name-label">Name
+            <input type="text" id="name" class="form-control" placeholder="Type your name" required>
+
+            <label id="email-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email" required>
+
+            <label id="number-label">Age</label>
+            <input type="number" class="form-control" id="number" min="15" max="100" placeholder="Age">
+
+            <label>Genre
+              <select name="" class="form-control" id="dropdown">
+                <option value="">-</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select></label>
+
+
+            <div class="form-group py-3">
+              <label>What genre of games do you prefer?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radiobtns" id="name" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Metroidvania
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radiobtns" id="name" value="option2" checked>
+                <label class="form-check-label">
+                  RPG
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radiobtns" id="name" value="option3" checked>
+                <label class="form-check-label">
+                  Platformers
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group pb-3">
+              <label>Do you prefer playing games with keyboard or gamepad?</label>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="cont1" value="keyboard">
+                <label class="form-check-label">
+                  Keyboard
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="cont2" value="gamepad">
+                <label class="form-check-label">
+                  Gamepad
+                </label>
+              </div>
+
+
+            </div>
+
+
+            <div class="py-3">
+              <label>Please type your 3 favorite game titles</label>
+              <textarea class="form-control" name="comment" placeholder="game titles 'separated by a ',' "></textarea>
+              <br>
+              <button id="submit" class="btn btn-primary btn-block" type="submit">Submit</button>
+            </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
